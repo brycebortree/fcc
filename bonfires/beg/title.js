@@ -15,8 +15,8 @@ titleCase("I'm a little tea pot");
 
 
 //intermediate solution:  solve w/ map
-//doesn't work for lowercasing rest
 function titleCase(str){
+  str = str.toLowerCase();
   var arr = str.split(" ");
   
   var ans = arr.map(function(val){

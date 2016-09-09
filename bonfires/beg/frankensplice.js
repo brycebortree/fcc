@@ -24,10 +24,10 @@ function frankenSplice(arr1, arr2, n) {
   var newArr = [];
  
   var beg = arr2.slice(0, n);
-  var mid = arr1;
+  // var mid = arr1;
   var end = arr2.slice(n, arr2.length);
   
-  newArr = beg.concat(mid).concat(end);
+  newArr = beg.concat(arr1).concat(end);
   
   return newArr;
 }

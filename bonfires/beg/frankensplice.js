@@ -17,3 +17,19 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2);
+
+//concat way; better
+
+function frankenSplice(arr1, arr2, n) {
+  var newArr = [];
+ 
+  var beg = arr2.slice(0, n);
+  var mid = arr1;
+  var end = arr2.slice(n, arr2.length);
+  
+  newArr = beg.concat(mid).concat(end);
+  
+  return newArr;
+}
+
+frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2);

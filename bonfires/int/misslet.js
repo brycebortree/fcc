@@ -15,3 +15,27 @@ function fearNotLetter(str) {
 }
 
 fearNotLetter("abce");
+
+//charcode
+
+function fearNotLetter(str) {
+  var charCodes = [];
+  str = str.split("");
+  
+  var chars = str.map(function(letter){
+    return letter.charCodeAt();
+  });
+  
+  for(var i = 0; i < chars.length - 1; i++){
+    if(chars[i + 1] !== chars[i] + 1){
+      return String.fromCharCode(chars[i] + 1);
+    }
+  }
+  
+  return undefined;
+  
+  
+}
+
+fearNotLetter("ab");
+

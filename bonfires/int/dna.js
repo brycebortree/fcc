@@ -1,26 +1,26 @@
 // ugly if else
-function pairElement(str) {
-  var bigArr = [];
+// function pairElement(str) {
+//   var bigArr = [];
     
   
-  var split = str.split("");
+//   var split = str.split("");
   
-  for(var i = 0; i < split.length; i++){
-    if(str[i] === "G"){
-      bigArr.push(["G", "C"]);
-    } else if (str[i] === "C") {
-      bigArr.push(["C", "G"]);
-    } else if (str[i] === "A"){
-      bigArr.push(["A", "T"]);
-    } else {
-      bigArr.push(["T", "A"]);
-    }
-  }
+//   for(var i = 0; i < split.length; i++){
+//     if(str[i] === "G"){
+//       bigArr.push(["G", "C"]);
+//     } else if (str[i] === "C") {
+//       bigArr.push(["C", "G"]);
+//     } else if (str[i] === "A"){
+//       bigArr.push(["A", "T"]);
+//     } else {
+//       bigArr.push(["T", "A"]);
+//     }
+//   }
 
-  return bigArr;
-}
+//   return bigArr;
+// }
 
-pairElement("GCG");
+// pairElement("GCG");
 
 
 // prettier switch
@@ -54,3 +54,5 @@ function pairElement(str) {
 }
 
 pairElement("GCG");
+
+//intermediate: map object
